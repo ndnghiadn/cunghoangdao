@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.image {
+    width: 120px;
+    height: 120px;
+}
+
+.collapse {
+    width: 600px;
+    margin-top: 30px;
+    background-color: #fafafa;
+}
+
+.paragraph {
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.paragraph:first-child {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .collapse {
+        width: 100%;
+    }
+}
+
+.arrow {
+    font-size: 18px;
+    color: #6b5b95;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.arrow:hover {
+    color: #a34dff;
+}
+
+.background {
+    z-index: -1;
+}
+
+.name {
+    color: #ffffff;
+}

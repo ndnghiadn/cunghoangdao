@@ -13,6 +13,7 @@
 }
 
 .footer {
+  min-height: 1em;
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -21,7 +22,7 @@
   align-items: center;
 }
 
-.footer a {
+.footer div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +43,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 5vw;
 }
 
 .title,
@@ -53,16 +54,20 @@
 .description {
   margin: 4rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 2vw;
 }
 
 .code {
   background: #fafafa;
   border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
+  padding: 0.5rem;
+  font-size: 2vw;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.code a {
+  color: #6b5b95;
 }
 
 .grid {
@@ -70,7 +75,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .card {
@@ -82,14 +87,16 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: min(250px, 80%);
+  display: flex;
+  justify-content: space-between;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #6b5b95;
+  border-color: #6b5b95;
 }
 
 .card h2 {
@@ -104,13 +111,32 @@
 }
 
 .logo {
-  height: 1em;
+  height: 2em;
   margin-left: 0.5rem;
+}
+
+.image {
+  width: 25%;
 }
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .title {
+    font-size: 8vw;
+  }
+  .description, .code {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 365px) {
+  .card h2 {
+    font-size: 5vw;
+  }
+  .card p {
+    font-size: 3vw;
   }
 }
