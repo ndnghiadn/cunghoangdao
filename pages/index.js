@@ -13,12 +13,12 @@ export default function Home({ data }) {
                 <meta name="revisit-after" content="1days" />
                 <meta name="robots" content="noarchive" />
 
-                <meta property="og:image" content="https://haxpubg.com/banner.JPG" />
-                <meta name="description" content="HAXPUBG.COM HACK MOBILE TENCENT, Hiển Thị Vị Trí Địch, AIMBOT, Ghìm Tâm, Nhìn Xuyên Tường, Hủy Diệt Trên Mọi Địa Hình" />
-                <meta name="keywords" content="mp40 mãng xà , mp40 mới , mp40 vip , mp mãng xà, táo quân , tasoquan, taoquan, táo quân 2021, taoquan2021,lixi, nhanlixi,hái lixi, lixi đầu xuân ,hai lộc nhanqua,hái lộc ,ak rồng xanh , ak đẹp , ak vip , ak rồng ,Đăng Nhập Nhận Kim Cương Free Fire Miễn Phí,skyler, sontunghfreefire,tmpfreefire,mtpff,freefrirexsontung,sơn tùng mtp,sơn tùng mtp, hải tú,lqhaitu, tbt , thiều bảo trâm ,sontunghaitu , sơn tùng hải tú , trà xanh ,sơn tùng cắm sừng bảo trâm , bảo trâm, mtphatieuphu, hà tiều phu bị cắm sừng , hà tiều phu , top olar bị cắm sừng , top1 olaf, alice heavy  nộ clip nóng , alice heavy 18+ , clip alice heavy  ,alice heavy bị quay nén ,Tải Liên Minh Tốc Chiến Cho Adroi , IOS,Tải Liên Minh Tốc Chiến Cho Adroi , IOS  , Tải VPN , KiWi,tai lien minh tốc chiến , tai lien minh toc chien cho adroi , tai lien minh tốc chiên ios , tai lien minh tốc chiến tnao , tai kiwi, fake ip ,rikaki , shopriki, Shopnamlay , shopkellygaming , shopcuakid , shophungakira , shopchinhthuc , shopanhford , shopasmobile, shophamon , shopcutu ,  shopkhongtay , shopmollu , shoptingayto , shoppopitv , shopbechanhff , shopquy1nn, shopgamecuta , bussgaming , shopnhungdayy , shopgaobac , shopcongantv , shopluutrungmamixi,Free Fire,highlight free fire,gk mamixi,mamixi highlight,free fire viet nam,WAG,C4,C4 Gaming,Vô Lý,FunkyM,mamixi free fire,bac gấu gaming,Sỹ Kẹo,Cô Ngân,Gao Bạc,Kelly Gaming,Nhung Dayy,Garena FF,Lãi Gió,Gil gaming,Hải Đăng Gamer,As mobile,Cham Cân 5,Sam,Toàn Tây,Conan Gaming,Vô Lý ff,Nam Lầy,Hà Moon,Ha Moon,Virus,StarboyVn,3K,Phú Đại,V Gaming,Binxu,Hùng Akira,Rikaki,Riki,Bảo Hân Tv,Thanh Tv,Tingayto,Khongtaygaming,mollu tv" />
-                <meta property="og:url" content="https://haxpubg.com"/>
-                <meta property="og:title" content="TRANG CHỦ - THUÊ HACK&MUA HACK - HAXPUBG.COM - HACK GAME ONLIINE" />
-                <meta property="og:description" content="HAXPUBG.COM HACK MOBILE TENCENT, Hiển Thị Vị Trí Địch, AIMBOT, Ghìm Tâm, Nhìn Xuyên Tường, Hủy Diệt Trên Mọi Địa Hình" />
+                <meta property="og:image" content="https://cunghoangdao.site/banner.JPG" />
+                <meta name="description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
+                <meta name="keywords" content="cung hoang dao, hoang dao, thong tin cung hoang dao, thông tin cung hoàng đạo, cung hoàng đạo, bạch dương, kim ngưu, song tử, cự giải, sư tử, xử nữ, thiên bình, bò cạp, nhân mã, ma kết, bảo bình, song ngư" />
+                <meta property="og:url" content="https://cunghoangdao.site/"/>
+                <meta property="og:title" content="TRANG CHỦ - THÔNG TIN CUNG HOÀNG ĐẠO - CUNGHOANGDAO.SITE" />
+                <meta property="og:description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                 <meta property="og:type" content="website" />
       </Head>
 
