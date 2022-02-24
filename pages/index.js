@@ -13,7 +13,7 @@ export default function Home({ data }) {
                 <meta name="revisit-after" content="1days" />
                 <meta name="robots" content="noarchive" />
 
-                <meta property="og:image" content="https://cunghoangdao.site/banner.JPG" />
+                <meta property="og:image" content="https://cunghoangdao.site/banner.jpg" />
                 <meta name="description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                 <meta name="keywords" content="cung hoang dao, hoang dao, thong tin cung hoang dao, thông tin cung hoàng đạo, cung hoàng đạo, bạch dương, kim ngưu, song tử, cự giải, sư tử, xử nữ, thiên bình, bò cạp, nhân mã, ma kết, bảo bình, song ngư" />
                 <meta property="og:url" content="https://cunghoangdao.site/"/>
