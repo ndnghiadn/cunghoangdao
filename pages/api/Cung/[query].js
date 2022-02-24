@@ -1,4 +1,4 @@
-import * as DATA from '../../../data.json'
+const DATA = require('../../../data.json')
 
 export default function handler(req, res) {
     const { query } = req.query
