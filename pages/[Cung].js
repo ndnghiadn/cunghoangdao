@@ -133,12 +133,18 @@ export default function CungComponent({ data }) {
 }
 
 export async function getServerSideProps(context) {
-    const { Cung } = context.query
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_ROUTE}/Cung/${Cung}`)
-    const data = await res.json()
-    return {
+    try {
+      const { Cung } = context.query
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_ROUTE}/Cung/${Cung}`)
+      const data = await res.json()
+      return {
         props: {
             data
         },
+    }
+    } catch (error) {
+      return {
+        props: {}
+      }
     }
 }
