@@ -2,9 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-import * as DATA from '../data.json'
-
-export default function Home() {
+export default function Home({ data }) {
   
   return (
     <div className={styles.container}>
@@ -26,7 +24,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           {
-            DATA.map(item => (
+            data.map(item => (
               <Link href={item.query} key={item.query}>
                 <a className={styles.card}>
                   <div>
@@ -52,4 +50,14 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+  const res = await fetch(`http://localhost:3000/api/Cung`)
+  const data = await res.json()
+  return {
+      props: {
+        data
+      },
+  }
 }

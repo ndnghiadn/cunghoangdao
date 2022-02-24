@@ -8,14 +8,11 @@ const { Panel } = Collapse
 import { ArrowLeftOutlined } from '@ant-design/icons'
 import Particles from 'react-tsparticles'
 
-import * as DATA from '../data.json'
-
-export default function CungComponent({ Cung }) {
+export default function CungComponent({ data }) {
     const [targetCung, setTargetCung] = useState()
 
     useEffect(() => {
-        setTargetCung(DATA.find(item => item.query === `/${Cung}`))
-        console.log('targetCung: ', DATA.find(item => item.query === `/${Cung}`))
+        setTargetCung(data)
     }, [])
 
     return targetCung ? (
@@ -137,9 +134,11 @@ export default function CungComponent({ Cung }) {
 
 export async function getServerSideProps(context) {
     const { Cung } = context.query
+    const res = await fetch(`http://localhost:3000/api/Cung/${Cung}`)
+    const data = await res.json()
     return {
         props: {
-            Cung
+            data
         },
     }
 }
