@@ -27,7 +27,7 @@ export default function Home() {
         <div className={styles.grid}>
           {
             DATA.map(item => (
-              <Link href={item.query}>
+              <Link href={item.query} key={item.query}>
                 <a className={styles.card}>
                   <div>
                     <h2>{item.name}</h2>
