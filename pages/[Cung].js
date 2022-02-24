@@ -15,10 +15,10 @@ export default function CungComponent({ data }) {
         setTargetCung(data)
     }, [])
 
-    return targetCung ? (
+    return data ? (
         <div className={styles.container}>
             <Head>
-                <title>Cung Hoàng Đạo - {targetCung.name}</title>
+                <title>Cung Hoàng Đạo - {targetCung?.name}</title>
                         <meta name="robots" content="index,follow" />
                         <meta name="revisit-after" content="1days" />
                         <meta name="robots" content="noarchive" />
@@ -27,7 +27,7 @@ export default function CungComponent({ data }) {
                         <meta name="description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                         <meta name="keywords" content="cung hoang dao, hoang dao, thong tin cung hoang dao, thông tin cung hoàng đạo, cung hoàng đạo, bạch dương, kim ngưu, song tử, cự giải, sư tử, xử nữ, thiên bình, bò cạp, nhân mã, ma kết, bảo bình, song ngư" />
                         <meta property="og:url" content="https://cunghoangdao.site/"/>
-                        <meta property="og:title" content={`THÔNG TIN CUNG HOÀNG ĐẠO - ${targetCung.name}`} />
+                        <meta property="og:title" content={`THÔNG TIN CUNG HOÀNG ĐẠO - ${targetCung?.name}`} />
                         <meta property="og:description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                         <meta property="og:type" content="website" />
             </Head>
@@ -112,31 +112,31 @@ export default function CungComponent({ data }) {
             />
             <div>
                 <ArrowLeftOutlined className={styles.arrow} onClick={() => Router.back()}/>
-                <h1 className={styles.name}>{targetCung.name}</h1>
+                <h1 className={styles.name}>{targetCung?.name}</h1>
             </div>
-            <img src={targetCung.image} alt={targetCung.name} className={styles.image}/>
+            <img src={targetCung?.image} alt={targetCung?.name} className={styles.image}/>
             <Collapse
                 className={styles.collapse}
                 defaultActiveKey="1"
                 expandIconPosition={'left'}
             >
                 <Panel header="Tính cách" key="1">
-                    { targetCung.personality?.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                    { targetCung?.personality.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
                 </Panel>
                 <Panel header="Tình cảm" key="2">
-                    { targetCung.love?.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                    { targetCung?.love.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
                 </Panel>
                 <Panel header="Gia đình" key="3">
-                    { targetCung.family?.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                    { targetCung?.family.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
                 </Panel>
                 <Panel header="Sự nghiệp" key="4">
-                    { targetCung.career?.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                    { targetCung?.career.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
                 </Panel>
                 <Panel header="Tài chính" key="5">
-                    { targetCung.finance?.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                    { targetCung?.finance.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
                 </Panel>
                 <Panel header="Fun fact" key="6">
-                    { targetCung.fact?.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                    { targetCung?.fact.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
                 </Panel>
             </Collapse>
         </div>
