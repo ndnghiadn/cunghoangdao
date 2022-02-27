@@ -55,7 +55,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #80ced6;
   border-radius: 5px;
   padding: 0.5rem;
   font-size: 2vw;
@@ -65,7 +65,7 @@
 }
 
 .code a {
-  color: #80ced6;
+  color: #618685;
 }
 
 .grid {
@@ -93,7 +93,7 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #80ced6;
+  color: #618685;
   border-color: #618685;
 }
 
