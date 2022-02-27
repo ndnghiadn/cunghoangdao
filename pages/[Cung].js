@@ -28,7 +28,7 @@ export default function CungComponent({ data }) {
                         <meta name="description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                         <meta name="keywords" content="cung hoang dao, hoang dao, thong tin cung hoang dao, thông tin cung hoàng đạo, cung hoàng đạo, bạch dương, kim ngưu, song tử, cự giải, sư tử, xử nữ, thiên bình, bò cạp, nhân mã, ma kết, bảo bình, song ngư" />
                         <meta property="og:url" content={`https://cunghoangdao.site${data.query}`}/>
-                        <meta property="og:title" content={`THÔNG TIN CUNG HOÀNG ĐẠO - ${data.name}`} />
+                        <meta property="og:title" content={`THÔNG TIN CHI TIẾT - CUNG ${data.name.toUpperCase()} - CUNGHOANGDAO.SITE`} />
                         <meta property="og:description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                         <meta property="og:type" content="website" />
             </Head>
