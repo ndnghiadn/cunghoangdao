@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
@@ -41,7 +42,7 @@ export default function Home({ data }) {
                     <h2>{item.name}</h2>
                     <p>{item.date}</p>
                   </div>
-                  <img className={styles.image} src={item.image} alt={item.name} />
+                  <Image src={item.image} alt={item.name} width="45vw" height="30vh" />
                 </a>
               </Link>
             ))

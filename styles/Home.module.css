@@ -113,10 +113,6 @@
   margin-left: 0.5rem;
 }
 
-.image {
-  width: 25%;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
