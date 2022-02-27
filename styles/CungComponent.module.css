@@ -49,12 +49,12 @@
 
 .arrow {
     font-size: 18px;
-    color: #6b5b95;
+    color: #d5f4e6;
     cursor: pointer;
 }
 
 .arrow:hover {
-    color: #a34dff;
+    color: #80ced6;
 }
 
 .background {

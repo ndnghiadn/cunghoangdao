@@ -51,7 +51,7 @@ export default function Home({ data }) {
       </main>
 
       <footer className={styles.footer}>
-        <p style={{color: 'black'}}>Powered by ndnghia (♋)<br /> All licences belong to MBbank MobileApp. Created with love ❤</p>
+        <p>Powered by ndnghia (♋)<br /> All licences belong to MBbank MobileApp. Created with love ❤</p>
       </footer>
     </div>
   ) : null

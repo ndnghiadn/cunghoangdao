@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.footer p {
+  color: #618685;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -61,7 +65,7 @@
 }
 
 .code a {
-  color: #6b5b95;
+  color: #80ced6;
 }
 
 .grid {
@@ -89,8 +93,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #6b5b95;
-  border-color: #6b5b95;
+  color: #80ced6;
+  border-color: #618685;
 }
 
 .card h2 {
