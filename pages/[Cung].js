@@ -7,6 +7,7 @@ import { Collapse } from 'antd'
 const { Panel } = Collapse
 import { ArrowLeftOutlined } from '@ant-design/icons'
 import Particles from 'react-tsparticles'
+import Image from 'next/image'
 
 export default function CungComponent({ data }) {
     const [targetCung, setTargetCung] = useState()
@@ -26,7 +27,7 @@ export default function CungComponent({ data }) {
                         <meta property="og:image" content="https://cunghoangdao.site/banner.jpg" />
                         <meta name="description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                         <meta name="keywords" content="cung hoang dao, hoang dao, thong tin cung hoang dao, thông tin cung hoàng đạo, cung hoàng đạo, bạch dương, kim ngưu, song tử, cự giải, sư tử, xử nữ, thiên bình, bò cạp, nhân mã, ma kết, bảo bình, song ngư" />
-                        <meta property="og:url" content="https://cunghoangdao.site/"/>
+                        <meta property="og:url" content={`https://cunghoangdao.site${data.query}`}/>
                         <meta property="og:title" content={`THÔNG TIN CUNG HOÀNG ĐẠO - ${data.name}`} />
                         <meta property="og:description" content="CUNGHOANGDAO.SITE TRA CỨU THÔNG TIN CUNG HOÀNG ĐẠO" />
                         <meta property="og:type" content="website" />
@@ -40,33 +41,6 @@ export default function CungComponent({ data }) {
                       },
                     },
                     fpsLimit: 120,
-                    interactivity: {
-                      events: {
-                        onClick: {
-                          enable: true,
-                          mode: "push",
-                        },
-                        onHover: {
-                          enable: true,
-                          mode: "grab",
-                        },
-                        resize: true,
-                      },
-                      modes: {
-                        bubble: {
-                          distance: 250,
-                          duration: 2,
-                          opacity: 0,
-                          size: 0,
-                        },
-                        push: {
-                          quantity: 4,
-                        },
-                        repulse: {
-                          distance: 400,
-                        },
-                      },
-                    },
                     particles: {
                       color: {
                         value: "#ffffff",
@@ -110,35 +84,36 @@ export default function CungComponent({ data }) {
                     detectRetina: true,
                   }}
             />
-            <div>
-                <ArrowLeftOutlined className={styles.arrow} onClick={() => Router.back()}/>
+            <div className={styles.content}>
+              <div className={styles.header}>
+                <ArrowLeftOutlined className={styles.arrow} onClick={() => Router.push('/')}/>
                 <h1 className={styles.name}>{targetCung?.name}</h1>
+                <Image src={data.image} alt={targetCung?.name} width="120" height="120" />
+              </div>
+              <Collapse
+                  className={styles.collapse}
+                  expandIconPosition={'left'}
+              >
+                  <Panel header="Tính cách" key="1">
+                      { targetCung?.personality.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                  </Panel>
+                  <Panel header="Tình cảm" key="2">
+                      { targetCung?.love.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                  </Panel>
+                  <Panel header="Gia đình" key="3">
+                      { targetCung?.family.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                  </Panel>
+                  <Panel header="Sự nghiệp" key="4">
+                      { targetCung?.career.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                  </Panel>
+                  <Panel header="Tài chính" key="5">
+                      { targetCung?.finance.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                  </Panel>
+                  <Panel header="Fun fact" key="6">
+                      { targetCung?.fact.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
+                  </Panel>
+              </Collapse>
             </div>
-            <img src={targetCung?.image} alt={targetCung?.name} className={styles.image}/>
-            <Collapse
-                className={styles.collapse}
-                defaultActiveKey="1"
-                expandIconPosition={'left'}
-            >
-                <Panel header="Tính cách" key="1">
-                    { targetCung?.personality.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
-                </Panel>
-                <Panel header="Tình cảm" key="2">
-                    { targetCung?.love.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
-                </Panel>
-                <Panel header="Gia đình" key="3">
-                    { targetCung?.family.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
-                </Panel>
-                <Panel header="Sự nghiệp" key="4">
-                    { targetCung?.career.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
-                </Panel>
-                <Panel header="Tài chính" key="5">
-                    { targetCung?.finance.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
-                </Panel>
-                <Panel header="Fun fact" key="6">
-                    { targetCung?.fact.map((paragraph, index) => <div key={index} className={styles.paragraph}>{paragraph}</div>) }
-                </Panel>
-            </Collapse>
         </div>
     ) : <Page404 />
 }

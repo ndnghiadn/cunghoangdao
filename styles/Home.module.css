@@ -13,20 +13,13 @@
 }
 
 .footer {
-  min-height: 1em;
+  max-height: 1em;
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 3rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-}
-
-.footer div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
@@ -64,6 +57,7 @@
   font-size: 2vw;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+  text-decoration: underline;
 }
 
 .code a {
