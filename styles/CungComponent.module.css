@@ -49,12 +49,12 @@
 
 .arrow {
     font-size: 18px;
-    color: #80ced6;
+    color: #9BB7D4;
     cursor: pointer;
 }
 
 .arrow:hover {
-    color: #618685;
+    color: #4d7eb3;
 }
 
 .background {
@@ -64,4 +64,5 @@
 .name {
     color: #ffffff;
     text-align: center;
+    font-family: 'Pacifico', cursive;
 }

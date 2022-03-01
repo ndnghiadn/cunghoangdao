@@ -24,13 +24,13 @@ export default function Home({ data }) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <span className={styles.title}>
           Cung Hoàng Đạo
-        </h1>
+        </span>
 
         <p className={styles.description}>
           Tìm hiểu thêm tại{' '}
-          <code className={styles.code}><a href="https://vi.wikipedia.org/wiki/Cung_Ho%C3%A0ng_%C4%90%E1%BA%A1o">đây</a></code>
+          <code className={styles.code}><a href="https://vi.wikipedia.org/wiki/Cung_Ho%C3%A0ng_%C4%90%E1%BA%A1o" target="_blank" rel="noreferrer">đây</a></code>
         </p>
 
         <div className={styles.grid}>
@@ -42,7 +42,7 @@ export default function Home({ data }) {
                     <h2>{item.name}</h2>
                     <p>{item.date}</p>
                   </div>
-                  <Image src={item.image} alt={item.name} width="45vw" height="30vh" />
+                  <Image src={item.image} alt={item.name} width="60vw" height="30vh" />
                 </a>
               </Link>
             ))

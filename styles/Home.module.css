@@ -23,24 +23,67 @@
 }
 
 .footer p {
-  color: #618685;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+  color: #9BB7D4;
 }
 
 .title {
+  width: fit-content;
+  font-family: 'Alfa Slab One', cursive;
+  position: absolute;
+  left: 50%;
+  top: 10vh;
+  transform: translate(-50%, -50%);
+  display: block;
+  color: #9BB7D4;
+  cursor: pointer;
   margin: 0;
   line-height: 1.15;
   font-size: 5vw;
+}
+
+.title::before {
+  content: "Cung Hoàng Đạo";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    black 2px,
+    black 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.title::after {
+  content: "Cung Hoàng Đạo";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    black 2px,
+    black 4px
+  );
+  -webkit-background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.title:hover::before {
+  top: 10px;
+  left: -10px;
+  z-index: -1;
+}
+
+.title:hover::after {
+  top: -10px;
+  left: -10px;
 }
 
 .title,
@@ -55,7 +98,7 @@
 }
 
 .code {
-  background: #80ced6;
+  background: #fafafa;
   border-radius: 5px;
   padding: 0.5rem;
   font-size: 2vw;
@@ -65,7 +108,7 @@
 }
 
 .code a {
-  color: #618685;
+  color: #9BB7D4;
 }
 
 .grid {
@@ -93,24 +136,20 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #618685;
-  border-color: #618685;
+  color: #9BB7D4;
+  border-color: #9BB7D4;
 }
 
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  font-family: 'Pacifico', cursive;
 }
 
 .card p {
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 2em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {
@@ -132,5 +171,12 @@
   }
   .card p {
     font-size: 3vw;
+  }
+}
+
+@media (min-width: 1193px) {
+  .title {
+    top: 12vh;
+    font-size: 7vw;
   }
 }

@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         {/* Import CSS for nprogress */}
-        <link rel="stylesheet" type="text/css" href="/nprogress.css" />
+        
       </Head>
       <Component {...pageProps} />
     </>
